@@ -1,0 +1,38 @@
+.App {
+  text-align: left;
+  width: 80%;
+  margin: 30px auto;
+}
+.share-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin: 20px 0;
+}
+.share-btn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background: #111827;
+  border-radius: 4px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 36px;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.share-btn:hover {
+  box-shadow: 0 0 5px 2px #3f3d3d;
+}
