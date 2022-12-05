@@ -105,20 +105,20 @@ const Invite = () => {
             </div>
             <div className="invite-card-top-right">
               <div className="drop-down-container">
-                {isselect ? (
-                  <DropdownButton title="Full access" id="dropdown-menu-align-right" onSelect={(e) => setSelectedAccess(e)} variant="none">
+                {/* {isselect ? ( */}
+                  <DropdownButton title="Full access" id="dropdown-menu-align-right" onChange={(e) => setSelectedAccess(e)} variant="none">
                     <Dropdown.Item eventKey="Full Access">Full Access</Dropdown.Item>
                     <Dropdown.Item eventKey="Can edit">Can edit</Dropdown.Item>
                     <Dropdown.Item eventKey="Can view">Can view</Dropdown.Item>
                     <Dropdown.Item eventKey="No access" style={{ color: "red" }}>No access</Dropdown.Item>
                   </DropdownButton>
-                ) : (
+                {/* ) : (
                   <>
                     <span>
                       <Dropdown.Toggle variant="failure" title="Full access" id="dropdown-menu-align-right" onClick={() => selectedUser.length > 0 && setIsselect(!isselect)}>Full access</Dropdown.Toggle>
                     </span>
                   </>
-                )}
+                )} */}
               </div>
               <div className="invite-top-btn"><button onClick={handleInvite}>Invite</button></div>
             </div>
