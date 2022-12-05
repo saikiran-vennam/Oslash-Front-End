@@ -244,7 +244,7 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 11px;
 }
 .card-footer-text-h2 {
   font-weight: 400;
