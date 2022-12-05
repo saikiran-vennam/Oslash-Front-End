@@ -9,22 +9,22 @@ export const myContext=createContext();
 export const ContextProvider=(props)=>{
     const members=[
         {
-            name:"Arlene Mccoy",
+            name:"Hilda Stephanie",
             email:"arlen@gmail.com",
             profileImg:p1,
             access:"No access"
            
         },
         {
-            name:"jhon",
-            email:"jhon@gmail.com",
+            name:"Abraham",
+            email:"Abraham@gmail.com",
             profileImg:p2,
             access:"No access"
 
         },
         {
-            name:"tom cook",
-            email:"tomcook@gmail.com",
+            name:"Paulo Ledier",
+            email:"pauloledier@gmail.com",
             profileImg:p3,
             access:"No access"
 

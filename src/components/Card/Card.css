@@ -110,8 +110,6 @@ input:checked + .slider:before {
 }
 .card-top-text-h2,
 .default-member-text-h2 {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -122,8 +120,6 @@ input:checked + .slider:before {
 }
 .card-top-text-p,
 .default-member-text-p {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -180,8 +176,6 @@ input:checked + .slider:before {
   flex: none;
   order: 1;
   flex-grow: 0;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -208,8 +202,6 @@ input:checked + .slider:before {
   cursor: pointer;
 }
 .default-member-right > span {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -255,8 +247,6 @@ input:checked + .slider:before {
   gap: 10px;
 }
 .card-footer-text-h2 {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -267,8 +257,6 @@ input:checked + .slider:before {
   margin-bottom: 0;
 }
 .card-footer-text-p {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
