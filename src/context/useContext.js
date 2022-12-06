@@ -10,7 +10,7 @@ export const ContextProvider=(props)=>{
     const members=[
         {
             name:"Hilda Stephanie",
-            email:"arlen@gmail.com",
+            email:"Hilda@gmail.com",
             profileImg:p1,
             access:"No access"
            
