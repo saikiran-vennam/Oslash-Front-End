@@ -7,7 +7,6 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Invite.css";
-import Select from "react-dropdown-select";
 
 const Invite = () => {
   const navigate = useNavigate();
@@ -109,21 +108,12 @@ const Invite = () => {
             </div>
             <div className="invite-card-top-right">
               <div className="drop-down-container">
-                {/* {isselect ? ( */}
                   <DropdownButton title={selectedaccess} id="dropdown-menu-align-right" variant="none">
                     <Dropdown.Item onClick={()=> setSelectedAccess("Full Access")} eventKey="Full Access">Full Access</Dropdown.Item>
                     <Dropdown.Item onClick={()=> setSelectedAccess("Can Edit")} eventKey="Can Edit">Can edit</Dropdown.Item>
                     <Dropdown.Item onClick={()=> setSelectedAccess("Can View")} eventKey="Can View">Can view</Dropdown.Item>
                     <Dropdown.Item onClick={()=> setSelectedAccess("No Access")} eventKey="No Access" style={{ color: "red" }}>No Access</Dropdown.Item>
-                  </DropdownButton>
-                  
-                 {/* ) : (
-                  <>
-                    <span>
-                      <Dropdown.Toggle variant="failure" title="Full access" id="dropdown-menu-align-right" onClick={() => selectedUser.length > 0 && setIsselect(!isselect)}>Full access</Dropdown.Toggle>
-                    </span>
-                  </>
-                )} */}
+                  </DropdownButton>      
               </div>
               <div className="invite-top-btn"><button onClick={handleInvite}>Invite</button></div>
             </div>

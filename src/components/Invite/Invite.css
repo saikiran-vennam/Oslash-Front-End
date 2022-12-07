@@ -182,5 +182,5 @@
 .selected-name-container{
   display: flex;
   justify-content: space-evenly;
-  gap: 11px;
+  gap: 10px;
 }
