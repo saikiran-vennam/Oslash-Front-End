@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { ContextProvider } from "./context/useContext";
+import { ContextProvider } from "./Data/Data";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Invite from "./components/Invite/Invite";
 

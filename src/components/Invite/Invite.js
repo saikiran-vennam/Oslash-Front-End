@@ -63,7 +63,7 @@ const Invite = () => {
       navigate("/");
       document.location.reload();
     } else {
-      alert("please select one person");
+      alert("Atmost One Input is Alloed");
     }
   };
 
