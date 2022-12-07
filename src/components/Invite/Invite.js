@@ -7,12 +7,16 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Invite.css";
+import Select from "react-dropdown-select";
 
 const Invite = () => {
   const navigate = useNavigate();
   const [selectedaccess, setSelectedAccess] = useState("No access");
   const { setMemberlist, memberslist, grouplist, setGrouplist, selectedUser, setSelectedUser, isselect, setIsselect } = useMyContext();
-  
+  let options = ["Full Access", "Can Edit", "Can View", "No Access"]
+  let values = ["Full Access", "Can Edit", "Can View", "No Access"]
+
+
   const myfunction = (e) => {
     let search = e.target.value.toUpperCase().trim();
     if (search === "")  document.location.reload();
@@ -112,6 +116,7 @@ const Invite = () => {
                     <Dropdown.Item eventKey="Can view">Can view</Dropdown.Item>
                     <Dropdown.Item eventKey="No access" style={{ color: "red" }}>No access</Dropdown.Item>
                   </DropdownButton>
+                  {/* <Select options={options} onChange={(values) => this.setValues(values)} /> */}
                 {/* ) : (
                   <>
                     <span>
