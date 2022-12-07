@@ -53,15 +53,15 @@ const Invite = () => {
     else if (selectedUser.length === 1) {
       let [data] = selectedUser;
       data.access = selectedaccess;
-      if (localStorage.getItem("selectedUser") === null) localStorage.setItem("selectedUser", "[]");
-      const oldData = JSON.parse(localStorage.getItem("selectedUser"));
+      if (localStorage.getItem("selectedUserDetails") === null) localStorage.setItem("selectedUserDetails", "[]");
+      const oldData = JSON.parse(localStorage.getItem("selectedUserDetails"));
       let i = checkPresentData(oldData, data);
       if (i === -1) {
         oldData.push(data);
-        localStorage.setItem("selectedUser", JSON.stringify(oldData));
+        localStorage.setItem("selectedUserDetails", JSON.stringify(oldData));
       } else {
         oldData[i].access = selectedaccess;
-        localStorage.setItem("selectedUser", JSON.stringify(oldData));
+        localStorage.setItem("selectedUserDetails", JSON.stringify(oldData));
       }
       navigate("/");
       document.location.reload();

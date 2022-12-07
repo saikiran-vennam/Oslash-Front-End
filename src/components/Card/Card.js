@@ -9,7 +9,7 @@ import "./Card.css";
 
 const Card = () => {
   const navigate = useNavigate();
-  const userdata = JSON.parse(localStorage.getItem("selectedUser"));
+  const userdata = JSON.parse(localStorage.getItem("selectedUserDetails"));
   const handleNavigate = () => {
     navigate("/invite");
   };
