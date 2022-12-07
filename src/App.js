@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './App.css';
-import Card from './components/Card/Card';
+import Card from './components/Overview/Overview';
 import Vector from "./images/Vector.png"
 
 const App = () => {

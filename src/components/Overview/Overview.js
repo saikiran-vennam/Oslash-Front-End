@@ -5,7 +5,7 @@ import downarrow from "../../images/down.png";
 import questionIcon from "../../images/question.png";
 import iconlink from "../../images/Iconlink.png";
 import { useNavigate } from "react-router-dom";
-import "./Card.css";
+import "./Overview.css";
 
 const Card = () => {
   const navigate = useNavigate();

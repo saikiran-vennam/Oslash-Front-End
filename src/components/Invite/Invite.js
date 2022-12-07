@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import cancel from "../../images/Vectorcross.png";
 import questionIcon from "../../images/question.png"
-import { useMyContext } from "../../context/useContext";
+import { useMyContext } from "../../Data/Data";
 import { useNavigate } from "react-router-dom";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -11,10 +11,7 @@ import "./Invite.css";
 const Invite = () => {
   const navigate = useNavigate();
   const [selectedaccess, setSelectedAccess] = useState("No access");
-  const { setMemberlist, memberslist, grouplist, setGrouplist, selectedUser, setSelectedUser, isselect, setIsselect } = useMyContext();
-  let options = ["Full Access", "Can Edit", "Can View", "No Access"]
-  let values = ["Full Access", "Can Edit", "Can View", "No Access"]
-
+  const { setMemberlist, memberslist, grouplist, setGrouplist, selectedUser, setSelectedUser } = useMyContext();
 
   const myfunction = (e) => {
     let search = e.target.value.toUpperCase().trim();
