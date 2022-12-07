@@ -110,14 +110,14 @@ const Invite = () => {
             <div className="invite-card-top-right">
               <div className="drop-down-container">
                 {/* {isselect ? ( */}
-                  <DropdownButton title="Full access" id="dropdown-menu-align-right" onChange={(e) => setSelectedAccess(e)} variant="none">
-                    <Dropdown.Item eventKey="Full Access">Full Access</Dropdown.Item>
-                    <Dropdown.Item eventKey="Can edit">Can edit</Dropdown.Item>
-                    <Dropdown.Item eventKey="Can view">Can view</Dropdown.Item>
-                    <Dropdown.Item eventKey="No access" style={{ color: "red" }}>No access</Dropdown.Item>
+                  <DropdownButton title={selectedaccess} id="dropdown-menu-align-right" variant="none">
+                    <Dropdown.Item onClick={()=> setSelectedAccess("Full Access")} eventKey="Full Access">Full Access</Dropdown.Item>
+                    <Dropdown.Item onClick={()=> setSelectedAccess("Can Edit")} eventKey="Can Edit">Can edit</Dropdown.Item>
+                    <Dropdown.Item onClick={()=> setSelectedAccess("Can View")} eventKey="Can View">Can view</Dropdown.Item>
+                    <Dropdown.Item onClick={()=> setSelectedAccess("No Access")} eventKey="No Access" style={{ color: "red" }}>No Access</Dropdown.Item>
                   </DropdownButton>
-                  {/* <Select options={options} onChange={(values) => this.setValues(values)} /> */}
-                {/* ) : (
+                  
+                 {/* ) : (
                   <>
                     <span>
                       <Dropdown.Toggle variant="failure" title="Full access" id="dropdown-menu-align-right" onClick={() => selectedUser.length > 0 && setIsselect(!isselect)}>Full access</Dropdown.Toggle>
